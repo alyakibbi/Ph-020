@@ -4,6 +4,7 @@ import matplotlib.pyplot as plt
 import sys
 
 #I am making this change so I can make a git push command 
+#I am making more changes so I can get the hang of git 
 
 t0 = 0 
 N = int(sys.argv[1])
