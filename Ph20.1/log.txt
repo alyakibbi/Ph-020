@@ -1,0 +1,53 @@
+commit 657dde69871b3da1826f3d17c5318fc45251455f
+Author: Alya Al-Kibbi <aalkibbi@caltech.edu>
+Date:   Fri Feb 22 17:08:23 2019 -0800
+
+    Putting all the files I need into the directory
+
+commit 18008109f2aebf62b6a6d4fbadd06b1882557794
+Author: Alya Al-Kibbi <aalkibbi@caltech.edu>
+Date:   Wed Feb 20 14:16:20 2019 -0800
+
+    Creating a directory for the Ph20.1 assignment
+
+commit e45dbb7fe429fa5e901551c4d6b9fb793b6f5886
+Author: Alya Al-Kibbi <aalkibbi@caltech.edu>
+Date:   Wed Feb 20 12:37:54 2019 -0800
+
+    I wrote a new line into my code again
+
+commit fe4aa29a6718e2b9db9365b2452a29b731557a28
+Author: Alya Al-Kibbi <aalkibbi@caltech.edu>
+Date:   Wed Feb 20 12:35:15 2019 -0800
+
+    I wrote a new line into my code
+
+commit f9f7cce7392c6dba27fd74b4ec35e596f1654e12
+Author: Alya Al-Kibbi <aalkibbi@caltech.edu>
+Date:   Wed Feb 20 12:33:52 2019 -0800
+
+    I am moving the assignemnt into a new directory
+
+commit abd6239b370ce20e5d3b791d4fba0a14eac8ccf9
+Author: Alya Al-Kibbi <aalkibbi@caltech.edu>
+Date:   Wed Feb 20 12:31:42 2019 -0800
+
+    I am moving the assignemnt back to the repository because I now realize that I have made an error
+
+commit 9089e898a630b8702c6806a8fd11483622cbdd20
+Author: Alya Al-Kibbi <aalkibbi@caltech.edu>
+Date:   Wed Feb 20 12:29:03 2019 -0800
+
+    I am moving the assignemnt to a directory
+
+commit 72592e23e99be4e8b09af60874b487130e52d277
+Author: Alya Al-Kibbi <aalkibbi@caltech.edu>
+Date:   Wed Feb 20 12:26:19 2019 -0800
+
+    I am importing the Ph20.3 assignment into the repository
+
+commit 479f0e8d290b765f1b98753e96f4e45d90d047ef
+Author: alyakibbi <46480561+alyakibbi@users.noreply.github.com>
+Date:   Wed Feb 20 12:20:58 2019 -0800
+
+    Initial commit

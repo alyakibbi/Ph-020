@@ -1,4 +1,4 @@
-all: 12.png 13.png 32.png 34.png 64.png 68.png 11.png 31.png 00.png 078539816339.png 10471975512.png 157079632679.png 22.png 55.png 89.png main.pdf 
+all: 12.png 13.png 32.png 34.png 64.png 68.png 11.png 31.png 00.png 078539816339.png 10471975512.png 157079632679.png 22.png 55.png 89.png main.pdf
 
 12.png : npcomputerxy.py
 	python3 $^ 1 2 1 1 0 0.001 10000 osc
@@ -44,9 +44,6 @@ all: 12.png 13.png 32.png 34.png 64.png 68.png 11.png 31.png 00.png 078539816339
 
 89.png : npcomputerzt.py
 	python $^ 8 9 1 1 0 0.001 10000
-
-log.txt : Ph20.1
-	git log > log.txt
 
 main.pdf : main.tex
 	pdflatex main.tex

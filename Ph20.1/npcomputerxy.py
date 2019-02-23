@@ -13,6 +13,7 @@ ay = float(sys.argv[4])
 phi = float(sys.argv[5])
 deltat = float(sys.argv[6])
 n = int(sys.argv[7])
+graphtype = str((sys.argv[8]))
 
 #creating an array of all the values of n using the np.arange method
 nlist = np.arange(n+1)
@@ -46,18 +47,82 @@ newfile.close()
 #extracting the data from the file to use in the plot 
 #the code selects what is to the left of the comma on each line as the value to 
 #be plotted on the x axis, and what is to the right of the comma on each line to 
-#be plotted on the y axis    
-x,y = np.loadtxt('seqs.txt', delimiter = ",", unpack = True)
-plt.figure(figsize=(3,3))
-plt.plot(x,y, label = '')
+#be plotted on the y axis
 
-#choosing the labels and titles for the graph, ensuring that it actually plots
-plt.xlabel('Fx')
-plt.ylabel('Fy')
-plt.title('Fx:' + str(fx) + ',' + 'Fy:' + str(fy))
-    #plt.savefig('', dpi=None, facecolor='w', edgecolor='w',
-    #orientation='portrait', papertype=None, format='png',
-    #transparent=False, bbox_inches='tight', pad_inches=0.1,
-#frameon=None, metadata=None)
-#plt.legend()
+if graphtype == 'phi':
+    x,y = np.loadtxt('seqs.txt', delimiter = ",", unpack = True)
+    plt.figure(figsize=(3,3))
+    plt.plot(x,y, label = '')
+
+
+    #choosing the labels and titles for the graph, ensuring that it actually plots
+    plt.xlabel('Fx')
+    plt.ylabel('Fy')
+    plt.title('Fx:' + str(fx) + ',' + 'Fy:' + str(fy))
+    plt.savefig('00.png', dpi=None, facecolor='w', edgecolor='w',
+        orientation='portrait', papertype=None, format='png',
+        transparent=False, bbox_inches='tight', pad_inches=0.1,
+        frameon=None, metadata=None)
+    #plt.legend()
+
+if graphtype == 'phi1':
+    x,y = np.loadtxt('seqs.txt', delimiter = ",", unpack = True)
+    plt.figure(figsize=(3,3))
+    plt.plot(x,y, label = '')
+    
+    
+    #choosing the labels and titles for the graph, ensuring that it actually plots
+    plt.xlabel('Fx')
+    plt.ylabel('Fy')
+    plt.title('Fx:' + str(fx) + ',' + 'Fy:' + str(fy))
+    plt.savefig('078539816339.png', dpi=None, facecolor='w', edgecolor='w',
+        orientation='portrait', papertype=None, format='png',
+        transparent=False, bbox_inches='tight', pad_inches=0.1,
+        frameon=None, metadata=None)
+
+if graphtype == 'phi2':
+    x,y = np.loadtxt('seqs.txt', delimiter = ",", unpack = True)
+    plt.figure(figsize=(3,3))
+    plt.plot(x,y, label = '')
+    
+    
+    #choosing the labels and titles for the graph, ensuring that it actually plots
+    plt.xlabel('Fx')
+    plt.ylabel('Fy')
+    plt.title('Fx:' + str(fx) + ',' + 'Fy:' + str(fy))
+    plt.savefig('10471975512.png', dpi=None, facecolor='w', edgecolor='w',
+                orientation='portrait', papertype=None, format='png',
+                transparent=False, bbox_inches='tight', pad_inches=0.1,
+                frameon=None, metadata=None)
+
+
+if graphtype == 'phi3':
+    x,y = np.loadtxt('seqs.txt', delimiter = ",", unpack = True)
+    plt.figure(figsize=(3,3))
+    plt.plot(x,y, label = '')
+    
+    
+    #choosing the labels and titles for the graph, ensuring that it actually plots
+    plt.xlabel('Fx')
+    plt.ylabel('Fy')
+    plt.title('Fx:' + str(fx) + ',' + 'Fy:' + str(fy))
+    plt.savefig('157079632679.png', dpi=None, facecolor='w', edgecolor='w', orientation='portrait', papertype=None, format='png',
+        transparent=False, bbox_inches='tight', pad_inches=0.1,
+        frameon=None, metadata=None)
+    #plt.legend()
+
+elif graphtype == 'osc':
+    x,y = np.loadtxt('seqs.txt', delimiter = ",", unpack = True)
+    plt.figure(figsize=(3,3))
+    plt.plot(x,y, label = '')
+    
+    
+    #choosing the labels and titles for the graph, ensuring that it actually plots
+    plt.xlabel('Fx')
+    plt.ylabel('Fy')
+    plt.title('Fx:' + str(fx) + ',' + 'Fy:' + str(fy))
+    plt.savefig((str(int(fx)) + str(int(fy)) + '.png'), dpi=None, facecolor='w', edgecolor='w', orientation='portrait', papertype=None, format='png',
+        transparent=False, bbox_inches='tight', pad_inches=0.1,
+        frameon=None, metadata=None)
+    #plt.legend()
 

@@ -1,9 +1,17 @@
 \documentclass{article}
 \usepackage[utf8]{inputenc}
-\usepackage{graphicx}
 \usepackage{subcaption}
 \usepackage[export]{adjustbox}
 \usepackage{wrapfig}
+\usepackage{verbatim}
+\usepackage[pdftex]{graphicx}
+
+\pdfinfo{
+   /Author (Alya AL-Kibbi)
+   /Title  (Ph 020 Assignment 1)
+   /Subject (Ph20.1)
+   /Keywords (PDF;LaTeX)
+}
 
 \title{Ph 020 Assignment 1}
 \author{Alya Al-Kibbi}
@@ -12,6 +20,18 @@
 \begin{document}
 
 \maketitle
+
+\subsection{Source Code}
+
+\verbatiminput{main.tex}
+
+\subsection{Makefile}
+
+\verbatiminput{Makefile.txt}
+
+\subsection{Git Log}
+
+\verbatiminput{log.txt}
 
 \section{Lissajous Figures}
 
