@@ -1,0 +1,196 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{subcaption}
+\usepackage[export]{adjustbox}
+\usepackage{wrapfig}
+
+\title{Ph 020 Assignment 1}
+\author{Alya Al-Kibbi}
+\date{January 2019}
+
+\begin{document}
+
+\maketitle
+
+\section{Lissajous Figures}
+
+\subsection{Relationship between $f_x$/$f_y$}
+
+Keeping the values of Ax, Ay, $\phi$, $\Delta$t, and N constant, we can observe how $f_x$, $f_y$ and the ratio $f_x$/$f_y$ affect the shape of the graph of X(t) plotted against Y(t). When investigating $f_x$ and $f_y$, I set Ax = 1, Ay = 1 , $\phi$ = 0, $\Delta$t = 0.001 and N = 10000. 
+
+As a general trend, the number $f_x$ dictates the number of ``bumps", or individual curves, on the graph shape on the y axis. The number $f_y$ does the same in the x axis direction. For example, in \ref{32}, we can see 2 bumps along the x axis as dictated by $f_y$, and 3 bumps along the y axis as dictated by $f_x$.
+
+Another pattern that emerges is that as long as the ratio of $f_x$ to $f_y$ is the same, the shape of the graph remains the same (with all other variables kept constant). For example, \ref{32} and \ref{64} have the same graph shape, as $f_x$/$f_y$ = 3/2 for both. The same is true for \ref{34} and \ref{68}, which both have $f_x$/$f_y$ = 3/4. 
+
+\subsubsection{Rational ratios}
+
+When $f_x$/$f_y$ gives a rational number, the graph creates a closed loop shape. This effect is demonstrated in Figure 1, where the line on the graph has neither an end nor a beginning. 
+
+\begin{figure}
+    \caption{Rational $f_x$/$f_y$ values}
+    \label{Rationals}
+
+
+\begin{subfigure}{0.5\textwidth}
+    \centering
+    \includegraphics[width=0.7\textwidth]{12.png}
+    \caption{$f_x$ = 1, $f_y$ = 2}
+    \label{12}
+\end{subfigure}
+\begin{subfigure}{0.5\textwidth}
+    \centering
+    \includegraphics[width=0.7\textwidth]{13.png}
+    \caption{$f_x$ = 1, $f_y$ = 3}
+    \label{13}
+\end{subfigure}
+\begin{subfigure}{0.5\textwidth}
+    \centering
+    \includegraphics[width=0.7\textwidth]{32.png}
+    \caption{$f_x$ = 3, $f_y$ = 2}
+    \label{32}
+\end{subfigure}  
+\begin{subfigure}{0.5\textwidth}
+    \centering
+    \includegraphics[width=0.7\textwidth]{34.png}
+    \caption{$f_x$ = 3, $f_y$ = 4}
+    \label{34}
+\end{subfigure}
+\begin{subfigure}{0.5\textwidth}
+    \centering
+    \includegraphics[width=0.7\textwidth]{64.png}
+    \caption{$f_x$ = 6, $f_y$ = 4}
+    \label{64}
+\end{subfigure}  
+\begin{subfigure}{0.5\textwidth}
+    \centering
+    \includegraphics[width=0.7\textwidth]{68.png}
+    \caption{$f_x$ = 6, $f_y$ = 8}
+    \label{68}
+\end{subfigure}
+
+\end{figure}
+
+\subsubsection{Irrational ratios}
+
+When $f_x$/$f_y$ is irrational, the graph gives an open loop shape. When the number N increases significantly, the graph becomes more full as the graph continues to loop around the plot without tracing over itself, offsetting its position slightly at every iteration.  This effect is demonstrated in Figure 2, where the end of the line on the graph does not connect with the beginning. 
+
+\begin{figure}
+    \caption{Irrational $f_x$/$f_y$ values}
+    \label{Irrationals}
+
+\begin{subfigure}{0.5\textwidth}
+    \centering
+    \includegraphics[width=0.7\textwidth]{11.png}
+    \caption{$f_x$ = 1, $f_y$ =  $\sqrt{2}$}
+    \label{1rt2}
+\end{subfigure}
+\begin{subfigure}{0.5\textwidth}
+    \centering
+    \includegraphics[width=0.7\textwidth]{31.png}
+    \caption{$f_x$ = 3, $f_y$ =  $\sqrt{2}$}
+    \label{3rt2}
+\end{subfigure}
+
+\end{figure}
+
+\subsection{Phase shift $\phi$}
+
+\begin{figure}
+    \caption{$\Phi$ investigation}
+    \label{Phi}
+
+\begin{subfigure}{0.5\textwidth}
+    \centering
+    \includegraphics[width=0.7\textwidth]{00.png}
+    \caption{$\phi$ = 0}
+    \label{pi0}
+\end{subfigure}
+\begin{subfigure}{0.5\textwidth}
+    \centering
+    \includegraphics[width=0.7\textwidth]{078539816339.png}
+    \caption{$\phi$ = $\pi/4$}
+    \label{pi4}
+\end{subfigure}
+\begin{subfigure}{0.5\textwidth}
+    \centering
+    \includegraphics[width=0.7\textwidth]{10471975512.png}
+    \caption{$\phi$ = $\pi/3$}
+    \label{pi3}
+\end{subfigure}  
+\begin{subfigure}{0.5\textwidth}
+    \centering
+    \includegraphics[width=0.7\textwidth]{157079632679.png}
+    \caption{$\phi$ = $\pi/2$}
+    \label{pi}
+\end{subfigure}
+\begin{subfigure}{0.5\textwidth}
+    \centering
+    \includegraphics[width=0.7\textwidth]{10471975512.png}
+    \caption{$\phi$ = $2\pi/3$}
+    \label{2pi3}
+\end{subfigure}
+\begin{subfigure}{0.5\textwidth}[h]
+    \centering
+    \includegraphics[width=0.7\textwidth]{078539816339.png}
+    \caption{$\phi$ = $3\pi/4$}
+    \label{3pi4}
+\end{subfigure}
+\begin{subfigure}{0.5\textwidth}
+    \centering
+    \includegraphics[width=0.7\textwidth]{00.png}
+    \caption{$\phi$ = $\pi$}
+    \label{pi}
+\end{subfigure}
+    
+\end{figure}
+
+
+Having equal values for $f_x$ and $f_y$ creates an elliptical, closed shape in the graph. If we keep the values of $f_x$ and $f_y$ the same while changing the values for the angle $\phi$ allows us to analyze the impact of the value of $\phi$ on the overall shape of the graph. 
+
+Starting at $\phi$ = 0, we can see that as the angle increases, the ellipse begins to take on a thinner shape, with the compression occurring diagonally such that the shape appears tilted at 45 degrees from the horizontal. As the angle of $\phi$ increases, the compression becomes more intense and the ellipse takes on a thinner shape. At $\phi$ = $\pi/2$, the ellipse reaches maximum compression, and its shape is so thin that it appears to be a straight line. 
+
+As we increase past $\phi$ = $\pi/2$, the trend reverses. As the angle size increases, the ellipse becomes less compressed, until at $\phi$ = $\pi$, where the ellipse returns to a circular shape and is equal to that at $\phi$ = 0. 
+For each value of $\phi$, the graph of $\pi$ - $\phi$ has the same shape. 
+
+\section{Beats}
+
+As illustrated in \ref{Beats}, when $f_x$ and $f_y$ are close, a beat phenomenon occurs. Here, we have plotted the value of Z against time t in order to demonstrate this effect. We observe a phenomenon where a carrier frequency is superimposed on a smaller frequency. 
+
+The reason the frequency of the peaks is ($\omega_1$ - $\omega_2$) instead of ($\omega_1$ - $\omega_2$)/2 is because as we are multiplying two sinusoids, two of these peaks occur per cycle. Thus, their frequency is double that of the cycle, as specified in the equation.  
+
+\begin{figure}
+    \caption{Examples of Beat Phenomenon}
+    \label{Beats}
+
+\begin{subfigure}{0.5\textwidth}
+    \centering
+    \includegraphics[width=0.7\textwidth]{22.png}
+    \caption{$f_x$ = 2, $f_y$ =  2.5}
+    \label{fig:1}
+\end{subfigure}
+\begin{subfigure}{0.5\textwidth}
+    \centering
+    \includegraphics[width=0.7\textwidth]{55.png}
+    \caption{$f_x$ = 5, $f_y$ =  5.2}
+    \label{fig:2}
+\end{subfigure}
+\begin{subfigure}{0.5\textwidth}
+    \centering
+    \includegraphics[width=0.7\textwidth]{89.png}
+    \caption{$f_x$ = 8, $f_y$ =  9}
+    \label{fig:2}
+\end{subfigure}
+
+\end{figure}
+
+\section{Reflection and code}
+
+
+I fist wrote my code to compute the functions using Python lists. Once I was able to do that, I altered and shortened the code by using Numpy arrays, which I had used in the past. I wrote my code in such a way that I could run it from a command line in the terminal and it would automatically create a plot of X(t) vs. Y(t). I then altered it using the sys.argv method so that I could change the variables I wanted to graph from the command line itself. I wrote a separate code that created a graph of Z(t) vs t, one version with lists and one with arrays. With these four separate codes, I was easily able to create specific plots from the terminal command line without having to alter any of my codes. As an example, if one wanted to graph X(t) vs Y(t) with the code that uses numpy, with inputs $f_x$ = 2, $f_y$ = 3, Ax = 1, Ay = 1, $\phi$ = 0, $\Delta$t = 0.001 and N = 10000, they would write `python3 npcomputerxy.py 2 3 1 1 0 0.001 10000' in the terminal. 
+
+Python is the only language I have used for programming. However, this particular project was a unique experience. For the first time, I was in charge of deciding the structure of the code and what it would do in order to achieve the specified goal. I was learning new coding techniques in order to discover something with concrete applications, which made my understanding of these coding methods more developed. 
+
+I agree with van Rossum's analysis of his own language. Because Python is quite simple in its syntax, it is easy to read and understand. This allows the user to focus more on the project itself and not on the specifics of the language. Because of its flexibility and its compatibility with modules, Python has few limitations for imaginative programmers. I believe that van Rossum's thoughts on Python all hold true. 
+
+\end{document}

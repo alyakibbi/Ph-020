@@ -55,9 +55,9 @@ plt.plot(x,y, label = '')
 plt.xlabel('Fx')
 plt.ylabel('Fy')
 plt.title('Fx:' + str(fx) + ',' + 'Fy:' + str(fy))
-plt.savefig((str(int(fx)) + str(int(fy)) + '.png'), dpi=None, facecolor='w', edgecolor='w',
-        orientation='portrait', papertype=None, format='png',
-        transparent=False, bbox_inches='tight', pad_inches=0.1,
-        frameon=None, metadata=None)
-plt.legend()
-plt.show()
+    #plt.savefig('', dpi=None, facecolor='w', edgecolor='w',
+    #orientation='portrait', papertype=None, format='png',
+    #transparent=False, bbox_inches='tight', pad_inches=0.1,
+#frameon=None, metadata=None)
+#plt.legend()
+
